@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Установка python и настройка окружения
-        uses: actions/setup_python@v3
+        uses: actions/setup-python@v3
         with:
           python-version: 3.9
 
