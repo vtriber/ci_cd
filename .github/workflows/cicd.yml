@@ -41,13 +41,13 @@ jobs:
           python-version: 3.9
 
       - name: Установка зависимостей
-        run: ip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Линтинг
         run: flake8 logistic/ --exclude logistic/migrations/
 
       - name: Тестирование
-        run: ython manage.py test
+        run: python manage.py test
         env:
           SECRET_KEY: ${env.SECRET_KEY}
           DEBUG: "0"
