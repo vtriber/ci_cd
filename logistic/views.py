@@ -15,7 +15,7 @@ class ProductViewSet(ModelViewSet):
     search_fields = ['title', 'description']
 
     @action(['GET'], detail=False)
-    def test(self, request):
+    def hello(self, request):
         return Response('HELLO WORLD!')
 
 
